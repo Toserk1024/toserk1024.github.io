@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
+<script>
+var userLang = navigator.language || navigator.userLanguage;
+if (userLang === 'en') {
+  window.location.href = '/en.html';
+}
+</script>
+<script>
+if (location.protocol !== 'https:') {
+  location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+</script>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -35,7 +46,5 @@
     <div class="filter"></div>
     <canvas id="canvas" width="1366" height="638"></canvas>
     <script type="text/javascript" src="./js/style.js"></script>
-    <script type="text/javascript" src="./js/https.js"></script>
-    <script type="text/javascript" src="./js/language.js"></script>
 </body>
 </html>
