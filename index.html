@@ -6,11 +6,6 @@ if (userLang === 'en') {
   window.location.href = '/en.html';
 }
 </script>
-<script>
-if (location.protocol !== 'https:') {
-  location.replace(`https:${location.href.substring(location.protocol.length)}`);
-}
-</script>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -35,7 +30,7 @@ if (location.protocol !== 'https:') {
             <ul class="navigation">
                 <li class="navigation__item"><a href="https://blog.toserk.tk" target="_blank">博客</a></li>
                 <li class="navigation__item"><a href="https://pan.toserk.tk" target="_blank">网盘</a></li>
-                <li class="navigation__item"><a href="https://uptime.toserk.tk" target="_blank">状态</a></li>
+                <li class="navigation__item"><a href="https://uptime.toserk.tk/status/status" target="_blank">状态</a></li>
             </ul>
         </nav>
 		<div class="nav01_fooder">Copyright © <a href="mailto:admin@toserk.tk" rel="nofollow" target="_blank">Toserk</a>&nbsp;&nbsp;|&nbsp;&nbsp;  All Rights Reserved</div>
