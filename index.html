@@ -1,45 +1,161 @@
-<!DOCTYPE html>
-<html>
-<script>
-var userLang = navigator.language || navigator.userLanguage;
-if (userLang === 'en') {
-  window.location.href = '/en.html';
-}
-</script>
+ <!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=11" id="mixia_vpid">
-    <title>Toserk引导页</title>
-    <meta name="keywords" content="toserk,引导页">
-    <meta name="description" content="Toserk的个人引导页">
-    <link rel="icon" href="https://cravatar.cn/avatar/8545c4d60ba0951868332099645f3f4e">
-    <link rel="shortcut icon" href="https://cravatar.cn/avatar/8545c4d60ba0951868332099645f3f4e">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta name="theme-color" content="#000">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+	<title>Toserk导航页</title>
+    <meta name="description" content="Toserk的个人导航页">
+	<meta name="keywords" content="toserk,导航页">
+	<link rel="shortcut icon" href="./assets/logo.webp">
+    <link rel="apple-touch-icon-precomposed" href="./assets/logo.webp">
+	<link rel="stylesheet" href="./assets/css/h.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/nekotora.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.css">
+	<script src="./assets/js/page.js"></script>
 </head>
 <body>
-    <div class="content">
-        <div class="title">Toserk<br>引导页</div>
-        <hr class="hr">
-        <div class="container">
-		<span id="hitokoto">正在获取中...</span>
-    </div>
-		<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-        <hr class="hr">
-        <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-                <li class="navigation__item"><a href="https://blog.toserk.top" target="_blank">博客</a></li>
-                <li class="navigation__item"><a href="https://pan.toserk.top" target="_blank">网盘</a></li>
-                <li class="navigation__item"><a href="https://status.toserk.top" target="_blank">状态</a></li>
-            </ul>
-        </nav>
-		<div class="nav01_fooder">Copyright © <a href="mailto:admin@toserk.top" rel="nofollow" target="_blank">Toserk</a>&nbsp;&nbsp;|&nbsp;&nbsp;  All Rights Reserved</div>
+<nav>
+	<a href="https://blog.toserk.top" class="blog">博客</a>
+	<a class="clip"></a>
+	<a href="https://pan.toserk.top" class="drive">网盘</a>
+	<a class="clip"></a>
+	<a href="https://status.toserk.top" class="status">状态</a>
+	<a class="clip"></a>
+	<a href="./archive/" class="status">旧版主页</a>
+</nav>
+<div class="background">
+	<canvas id="startrack" width="1536" height="1065"></canvas>
+	<div class="cover"></div>
+</div>
+<div class="main">
+    <div class="ch intro">
+	    <div class="container">
+			<div class="hello">
+				<h1 id="slogan">思考中......</h1>
+				<div class="kong"></div>
+				<span class="toppic-line"></span>
+				<h2><div class="circle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>Welcome To Toserk&导航页</h2>
+			</div>
+	    </div>
+	</div>
+	<div class="ch about">
+		<div class="container">
+			<h2 class="chtitle">Who is <span>Toserk</span> ？</h2>
+			<div class="clear">
+				<div class="introduct">
+				    <img class="avatar" src="./assets/logo.webp">
+				    <div class="kongk"></div>
+					<p style="padding-bottom:1em">俱往矣，数风流人物，还看今朝！</p>
+		            <p>嗨！欢迎来到我的的主页，<br>我是Toserk，一位致力于捣鼓新东西的初中生</p>
+					<div class="chatbox">
+					    <div class="line loading">
+						    <span></span> 
+						    <span></span> 
+						    <span></span>
+						</div>
+					</div>
+				</div>
+				<ul class="skill clear">
+					<li><p>HTML5/CSS3</p>
+						<div class="progress">
+							 <div style="width:45%">
+							 </div>
+							 <span>搭建网站的能力</span>
+						</div>
+					</li>
+					<li><p>学习</p>
+						<div class="progress">
+							 <div style="width:55%"></div>
+							 <span>探索新知识的能力</span>
+						</div>
+					</li>
+					<li><p>摆烂</p>
+						<div class="progress">
+							 <div style="width:100%"></div>
+							 <span>不说了，开摆！</span>
+						</div>
+					</li>
+				</ul>
+            </div>
 		</div>
-		
-<body>
-    <div class="landscape"></div>
-    <div class="filter"></div>
-    <canvas id="canvas" width="1366" height="638"></canvas>
-    <script type="text/javascript" src="./js/style.js"></script>
+	</div>
+	<div class="find ch">
+		<div class="container links">
+			<h2 class="chtitle">Get in<span> touch <i class="fa fa-envelope faa-wrench animated"></i></span></h2>
+			<div class="clear">
+	            <a href="mailto:admin@toserk.top" target="_blank"><div class="item">
+			        <div class="bg" style="background-color: #FAC70F"></div>
+	                <div class="inner">
+					    <i class="neko-icon icon-email"></i>
+		                <span>Mail</span>
+		            </div>
+	            </div></a>
+	            <a href="https://space.bilibili.com/2123238845" target="_blank"><div class="item">
+		            <div class="bg" style="background-color: #F9A2A8"></div>
+	                <div class="inner">
+					    <i class="neko-icon icon-bilibili"></i>
+		                <span>Bilibili</span>
+		            </div>
+	            </div></a>
+	            <a href="https://github.com/Toserk1024" target="_blank">
+		            <div class="item">
+			        <div class="bg" style="background-color:#353535"></div>
+			        <div class="inner">
+			        <i class="neko-icon icon-github" aria-hidden="true" /></i>
+				        <span>Github</span> 
+			        </div>
+		        </div></a>
+            </div>
+        </div>
+	</div>
+	<div class="gate ch">
+		<div class="container links">
+			<h2 class="chtitle">My <span>Service <i class="fa fa-server faa-float animated"></i></span></h2>
+			<div class="clear">
+	            <a href="https://blog.toserk.top" target="_blank"><div class="item">
+		            <div class="avatar">
+						<img src="./assets/logo.webp">
+					</div>
+	                <div class="inner">
+		                <h5>Toserk博客</h5>
+		                <p></p>
+		            </div>
+	            </div></a>
+				<a href="https://status.toserk.top/" target="_blank"><div class="item">
+		            <div class="avatar">
+						<img src="./assets/image/status.png">
+					</div>
+	                <div class="inner">
+		                <h5>站点监测</h5>
+		                <p></p>
+		            </div>
+	            </div></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer ch">
+		<div class="container">
+			<h3>Toserk&导航页</h3>
+			<p>俱往矣，数风流人物，还看今朝。</p>
+			<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+			<div id="poem_sentence"></div>
+			<div id="poem_info"></div>
+			<script type="text/javascript">
+				jinrishici.load(function(result) {
+					var sentence = document.querySelector("#poem_sentence")
+					var info = document.querySelector("#poem_info")
+					sentence.innerHTML = result.data.content
+					info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+				});
+			</script>
+		</div>
+	</div>
+</div>
 </body>
 </html>
